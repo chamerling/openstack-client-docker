@@ -26,7 +26,7 @@ RUN mkdir /run/sshd
 RUN echo >> $HOME/.bashrc
 RUN echo "export PATH=$PATH:$HOME/.rbenv/bin:$HOME/.rbenv/shims:$HOME/.rbenv/versions/1.9.3-p448/bin" >> $HOME/.bashrc
 
-ADD ./openstackrc.sh $HOME/
+ADD ./etc/openstackrc.sh $HOME/
 
 EXPOSE 22
 CMD ["/usr/sbin/sshd", "-D", "-p 22"]
