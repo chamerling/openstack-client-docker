@@ -17,13 +17,13 @@ This assumes that you already have docker installed on your system (RTFM)
 
 #### From the docker registry
 
-    docker run chamerling/openstack-client
+    sudo docker pull chamerling/openstack-client
+    sudo docker run -i -t chamerling/openstack-client /bin/bash
 
 ### Use
 
-1. Once installed and started, you can SSH to the container (run 'docker ps' in order to get the right port to SSH to).
-2. You can use the $HOME/openstackrc.sh to setup your env, or create your own
-3. Run any openstack client command, all is available in the container. 
+1. You can use the /root/openstackrc.sh to setup your env, or create your own
+2. Run any openstack client command, all are available in the container (nova, cinder, ...). 
 
 ## License
 
