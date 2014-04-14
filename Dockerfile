@@ -17,6 +17,7 @@ RUN pip install python-swiftclient
 RUN pip install python-heatclient
 RUN pip install python-cinderclient
 RUN pip install python-keystoneclient
+RUN pip install python-neutronclient
 
 ENV HOME /root
 RUN git clone https://github.com/sstephenson/rbenv.git $HOME/.rbenv
